@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+/* =========================================================
+HackForge
+Gruvbox Hard
+Dark / Minimal / Terminal
+========================================================= */
+
+:root {
+/* ---------- Gruvbox Hard ---------- */
+
+--bg: #1d2021;
+--bg-deep: #141617;
+
+--surface: #282828;
+--surface-light: #32302f;
+--surface-hover: #3c3836;
+
+/* Text */
+--text: #ebdbb2;
+--text-bright: #fbf1c7;
+--text-muted: #a89984;
+
+/* Gruvbox accents */
+--green: #b8bb26;
+--green-bright: #98971a;
+
+--yellow: #fabd2f;
+--yellow-dark: #d79921;
+
+--orange: #fe8019;
+--red: #fb4934;
+
+--blue: #83a598;
+--blue-dark: #458588;
+
+--aqua: #8ec07c;
+--purple: #d3869b;
+
+/* Borders */
+--border: #3c3836;
+--border-light: #504945;
+
+/* Layout */
+--content-width: 950px;
+
+
+}
+
+/* =========================================================
+Reset
+========================================================= */
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+min-height: 100vh;
+
+background: var(--bg);
+
+color: var(--text);
+
+font-family: "Ubuntu Mono", monospace;
+font-size: 19px;
+line-height: 1.8;
+
+-webkit-font-smoothing: antialiased;
+
+
+}
+
+/* =========================================================
+Layout
+========================================================= */
+
+header,
+main,
+footer {
+width: min(
+calc(100% - 2rem),
+var(--content-width)
+);
+
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
+header {
+margin-top: 3rem;
+margin-bottom: 3rem;
+padding-bottom: 1.5rem;
+
+border-bottom: 2px solid var(--border);
+
+
+}
+
+main {
+margin-bottom: 5rem;
+}
+
+footer {
+margin-top: 3rem;
+margin-bottom: 2rem;
+padding: 1.5rem 0;
+
+border-top: 1px solid var(--border);
+
+color: var(--text-muted);
+font-size: 0.9rem;
+
+
+}
+
+/* =========================================================
+Typography
+========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: "Ubuntu Mono", monospace;
+font-weight: 700;
+line-height: 1.25;
+}
+
+header h1 {
+margin: 0;
+
+color: var(--yellow);
+
+font-size: clamp(2.2rem, 6vw, 3.2rem);
+
+letter-spacing: -0.04em;
+
+
+}
+
+main h1 {
+margin-top: 3.5rem;
+padding-bottom: 0.7rem;
+color: var(--yellow);
+font-size: 2rem;
+line-height: 1.3;
+border-bottom: 1px solid var(--border);
+}
+
+h2 {
+margin-top: 3rem;
+color: var(--orange);
+font-size: 1.75rem;
+}
+
+h3 {
+margin-top: 2rem;
+color: var(--aqua);
+font-size: 1.4rem;
+}
+
+p {
+margin: 1.2rem 0;
+}
+
+strong,
+b {
+color: var(--text-bright);
+
+font-weight: 700;
+
+
+}
+
+em {
+color: var(--yellow);
+}
+
+/* =========================================================
+Links
+========================================================= */
+
+a {
+color: var(--green);
+
+text-decoration: none;
+
+transition:
+	color 0.15s ease,
+	background 0.15s ease,
+	border-color 0.15s ease;
+
+
+}
+
+a:hover,
+a:focus-visible {
+color: var(--yellow);
+
+text-decoration: underline;
+
+
+}
+
+a:focus-visible {
+outline: 1px solid var(--yellow);
+outline-offset: 3px;
+}
+
+/* =========================================================
+Navigation
+========================================================= */
+
+.navigation {
+margin-top: 1.5rem;
+}
+
+.navigation ul {
+display: flex;
+flex-wrap: wrap;
+
+gap: 0.5rem;
+
+margin: 0;
+padding: 0;
+
+list-style: none;
+
+
+}
+
+.navigation li {
+margin: 0;
+padding: 0;
+}
+
+.navigation a {
+display: inline-block;
+
+padding: 0.4rem 0.75rem;
+
+background: var(--surface);
+
+border: 1px solid var(--border);
+
+color: var(--text);
+
+font-weight: 700;
+
+text-decoration: none;
+
+
+}
+
+.navigation a::before {
+content: "./";
+
+color: var(--green);
+
+
+}
+
+.navigation a:hover,
+.navigation a:focus-visible {
+background: var(--surface-hover);
+
+border-color: var(--yellow);
+
+color: var(--yellow);
+
+text-decoration: none;
+
+
+}
+
+/* =========================================================
+Lists
+========================================================= */
+
+main ul,
+main ol {
+padding-left: 1.8rem;
+}
+
+main li {
+margin: 0.35rem 0;
+}
+
+main ul li::marker {
+color: var(--green);
+}
+
+main ol li::marker {
+color: var(--orange);
+
+font-weight: 700;
+
+
+}
+
+/* =========================================================
+Blockquotes
+========================================================= */
+
+blockquote {
+margin: 2rem 0;
+padding: 0 1rem;
+
+border-left: 3px solid var(--purple);
+
+color: var(--text-muted);
+
+
+}
+
+blockquote p {
+margin: 0;
+}
+
+/* =========================================================
+Tables
+========================================================= */
+
+.e-rte-table {
+width: 100%;
+margin: 2.5rem 0;
+border-collapse: collapse;
+background: var(--surface);
+font-size: 1rem;
+}
+
+.e-rte-table th,
+.e-rte-table td {
+padding: 0.9rem 1rem;
+border: 1px solid var(--border);
+text-align: left;
+vertical-align: top;
+}
+
+.e-rte-table th {
+background: var(--bg-deep);
+
+color: var(--yellow);
+
+font-weight: 700;
+
+
+}
+
+.e-rte-table tbody tr {
+transition: background 0.15s ease;
+}
+
+.e-rte-table tbody tr:hover {
+background: var(--surface-hover);
+}
+
+.e-rte-table td:first-child {
+color: var(--text-bright);
+}
+
+.e-rte-table td:nth-child(2) {
+color: var(--text-muted);
+}
+
+/*
+
+Your event tables use <br/> inside cells
+
+for continuation rows.
+*/
+.e-rte-table td br:only-child {
+display: none;
+}
+
+/* =========================================================
+Inline Code
+========================================================= */
+
+code {
+padding: 0.1rem 0.35rem;
+background: var(--bg-deep);
+border: 1px solid var(--border);
+color: var(--green);
+font-family: "Ubuntu Mono", monospace;
+font-size: 0.95em;
+}
+
+/* =========================================================
+Code Blocks
+========================================================= */
+
+pre {
+margin: 2rem 0;
+padding: 1.2rem;
+overflow-x: auto;
+background: var(--bg-deep);
+border: 1px solid var(--border);
+border-left: 3px solid var(--green);
+}
+
+pre code {
+display: block;
+padding: 0;
+background: transparent;
+border: 0;
+color: #b8bb26;
+font-family: "Ubuntu Mono", monospace;
+font-size: 1rem;
+line-height: 1.7;
+
+white-space: pre;
+
+
+}
+
+/* =========================================================
+Footer
+========================================================= */
+
+footer p {
+margin: 0;
+}
+
+/* =========================================================
+Selection
+========================================================= */
+
+::selection {
+background: var(--yellow);
+color: var(--bg);
+}
+
+/* =========================================================
+Scrollbar
+========================================================= */
+
+{
+scrollbar-width: thin;
+scrollbar-color:
+var(--border-light)
+var(--bg);
+}
+
+*::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+background: var(--bg);
+}
+
+*::-webkit-scrollbar-thumb {
+background: var(--border-light);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+background: var(--text-muted);
+}
+
+/* =========================================================
+Mobile
+========================================================= */
+
+@media (max-width: 700px) {
+body {
+font-size: 16px;
+}
+
+header,
+main,
+footer {
+	width: min(
+		calc(100% - 1.25rem),
+		var(--content-width)
+	);
+}
+
+header {
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+header h1 {
+	font-size: 2rem;
+}
+
+main h1 {
+	font-size: 1.7rem;
+}
+
+h2 {
+	font-size: 1.4rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+.e-rte-table {
+	display: block;
+
+	overflow-x: auto;
+
+	white-space: nowrap;
+}
+
+.e-rte-table th,
+.e-rte-table td {
+	padding: 0.65rem 0.75rem;
+}
+
+pre {
+	padding: 1rem;
+}
+
+
+}
+
+/* =========================================================
+Small Phones
+========================================================= */
+
+@media (max-width: 420px) {
+header,
+main,
+footer {
+width: calc(100% - 1rem);
+}
+
+header h1 {
+	font-size: 1.7rem;
+}
+
+main h1 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.3rem;
+}
+
+main ul,
+main ol {
+	padding-left: 1.4rem;
+}
+
+.navigation a {
+	padding: 0.3rem 0.6rem;
+}
+
+
+}
+
+/* =========================================================
+Accessibility
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+html {
+scroll-behavior: auto;
+}
+
+* {
+	transition: none !important;
+}
+
+
+}
