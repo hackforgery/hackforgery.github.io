@@ -1,0 +1,572 @@
+<!DOCTYPE-HTML>
+
+<html>
+
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<link rel = "icon" href = "../../visuals/favicon.png" type = "image/x-icon">
+		<link rel = "stylesheet" href = "../../style.css">
+		<title>╰༼ ⋋ ‸ ⋌ ༽╯</title>
+	</head>
+
+	<header>
+		<h1>Template for Submission</h1>
+		<nav class = "navigation">
+			<ul>
+				<li><a href = "../index.html">Events</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h1>Habitica</h1>
+<h3>Turning Everyday Goals into a Game</h3>
+<p><strong>HackForge Theme:</strong> 🌎 Open Innovation</p>
+<hr/>
+<h1>1. Problem Statement</h1>
+<h2>The Problem</h2>
+<p>People frequently set goals such as:</p>
+<ul>
+   <li>Exercise regularly</li>
+   <li>Study every day</li>
+   <li>Read more</li>
+   <li>Complete assignments</li>
+   <li>Maintain a routine</li>
+   <li>Reduce unproductive habits</li>
+</ul>
+<p>The difficulty is often not knowing <strong>what</strong> needs to be done.</p>
+<p>The difficulty is consistently doing it.</p>
+<p>Traditional productivity tools usually represent goals as lists, checkboxes, reminders, and deadlines. While these tools are useful for organizing tasks, completing a checkbox does not necessarily make the activity engaging or provide a meaningful sense of progression.</p>
+<p>As a result, users may start a productivity system enthusiastically but gradually stop using it.</p>
+<h3>Who Experiences This Problem?</h3>
+<p>The problem can affect:</p>
+<ul>
+   <li>Students managing academic and personal goals.</li>
+   <li>People trying to build healthier routines.</li>
+   <li>Users attempting to reduce undesirable habits.</li>
+   <li>People who struggle with procrastination.</li>
+   <li>Users who enjoy games and respond well to progression systems.</li>
+   <li>Teams or groups trying to maintain accountability.</li>
+</ul>
+<h3>Why Is It a Problem?</h3>
+<p>A productivity system is only useful if people continue using it.</p>
+<p>When motivation decreases:</p>
+<pre><code class="language-text">Goal
+ ↓
+Task list
+ ↓
+Initial motivation
+ ↓
+Missed tasks
+ ↓
+Less engagement
+ ↓
+Abandoned system
+</code></pre>
+<p>The challenge is therefore not simply <strong>task organization</strong>.</p>
+<p>It is:</p>
+<blockquote>
+   <p><strong>How can everyday responsibilities be made more engaging so that users have a stronger reason to consistently interact with their productivity system?</strong></p>
+</blockquote>
+<hr/>
+<h1>2. Existing Solutions</h1>
+<p>Several categories of tools already address productivity and habit formation.</p>
+<h2>Traditional To-Do Applications</h2>
+<p>To-do applications allow users to create tasks, deadlines, reminders, and checklists.</p>
+<p><strong>Limitation:</strong> They primarily represent tasks as items to complete. The experience may provide limited motivation beyond checking an item off.</p>
+<h2>Calendar and Reminder Applications</h2>
+<p>Calendars and reminder systems help users schedule activities and receive notifications.</p>
+<p><strong>Limitation:</strong> They are effective at reminding users what to do, but a reminder does not necessarily create motivation to complete the activity.</p>
+<h2>Habit Trackers</h2>
+<p>Habit-tracking applications allow users to record whether they completed a habit and often provide streaks.</p>
+<p><strong>Limitation:</strong> The interaction can still become repetitive, particularly when the initial motivation to maintain a streak disappears.</p>
+<h2>Productivity Systems</h2>
+<p>More advanced productivity applications provide projects, dashboards, statistics, tags, priorities, and integrations.</p>
+<p><strong>Limitation:</strong> Increasing organizational features does not necessarily solve the underlying engagement problem.</p>
+<h2>Identified Gap</h2>
+<p>Most productivity systems focus primarily on:</p>
+<blockquote>
+   <p><strong>Organizing work.</strong></p>
+</blockquote>
+<p>The proposed approach focuses on:</p>
+<blockquote>
+   <p><strong>Making progress itself rewarding.</strong></p>
+</blockquote>
+<p>This creates an opportunity to combine productivity with mechanics normally associated with games.</p>
+<hr/>
+<h1>3. Proposed Solution</h1>
+<h2>Habitica</h2>
+<p>Habitica approaches productivity as a role-playing game.</p>
+<p>Instead of treating a user's goals as simple checkboxes, the system represents progress through game mechanics.</p>
+<p>The basic concept is:</p>
+<pre><code class="language-text">Real-Life Task
+      ↓
+Complete Task
+      ↓
+Earn Experience / Gold
+      ↓
+Character Progression
+      ↓
+Unlock / Purchase Rewards
+      ↓
+Continue Completing Tasks
+</code></pre>
+<p>Habitica describes itself as an open-source habit-building program that treats a user's life like a role-playing game. Completing tasks can provide experience and Gold, while failing to complete certain tasks can affect the player's health.</p>
+<h3>The Core Idea</h3>
+<p>The system converts:</p>
+<blockquote>
+   <p><strong>"I need to study for two hours."</strong></p>
+</blockquote>
+<p>into:</p>
+<blockquote>
+   <p><strong>"Completing my study task progresses my character."</strong></p>
+</blockquote>
+<p>The real-world task remains the objective.</p>
+<p>The game mechanics provide an additional feedback loop around completing it.</p>
+<h2>The Productivity Loop</h2>
+<pre><code class="language-text">             SET GOAL
+                │
+                ▼
+          CREATE TASK
+                │
+                ▼
+          COMPLETE TASK
+                │
+                ▼
+       RECEIVE FEEDBACK
+          │           │
+          ▼           ▼
+       XP / Gold    Streak
+          │           │
+          └─────┬─────┘
+                ▼
+        CHARACTER PROGRESS
+                │
+                ▼
+             REWARDS
+                │
+                ▼
+        CONTINUE THE LOOP
+</code></pre>
+<p>The system therefore connects everyday activities with immediate feedback and longer-term progression.</p>
+<hr/>
+<h1>4. Key Features</h1>
+<h2>1. Habits</h2>
+<p>Users can define behaviors they want to encourage or discourage.</p>
+<p>For example:</p>
+<ul>
+   <li>Exercise</li>
+   <li>Drink water</li>
+   <li>Take a break</li>
+   <li>Avoid excessive screen time</li>
+</ul>
+<p>Habitica allows habits to be represented as positive or negative behaviors.</p>
+<p>This allows users to track behaviors that are not necessarily tied to a fixed schedule.</p>
+<h2>2. Dailies</h2>
+<p>Dailies represent activities that should occur according to a recurring schedule.</p>
+<p>Examples:</p>
+<ul>
+   <li>Study every weekday</li>
+   <li>Exercise every Monday, Wednesday, and Friday</li>
+   <li>Read before sleeping</li>
+   <li>Complete a weekly assignment</li>
+</ul>
+<p>Dailies can be scheduled at different recurring intervals rather than being limited to literally every day.</p>
+<h2>3. To-Do Tasks</h2>
+<p>One-time or infrequent activities can be represented as To-Dos.</p>
+<p>Examples:</p>
+<ul>
+   <li>Submit an assignment</li>
+   <li>Complete a project</li>
+   <li>Buy a textbook</li>
+   <li>Prepare a presentation</li>
+</ul>
+<h2>4. Rewards</h2>
+<p>Users can associate progress with rewards.</p>
+<p>These include in-game rewards such as equipment as well as user-defined real-world rewards.</p>
+<p>This creates a direct relationship between completing real-world tasks and receiving something the user values.</p>
+<h2>5. Character Progression</h2>
+<p>Completing tasks can contribute to:</p>
+<ul>
+   <li>Experience</li>
+   <li>Gold</li>
+   <li>Character progression</li>
+   <li>Equipment</li>
+   <li>Other game rewards</li>
+</ul>
+<p>The user's productivity therefore produces visible progression rather than simply changing a checkbox from incomplete to complete.</p>
+<h2>6. Streaks</h2>
+<p>Repeatedly completing scheduled activities can build streaks.</p>
+<p>Streaks provide users with a visible representation of consistency and can encourage them to maintain an established routine.</p>
+<h2>7. Quests</h2>
+<p>Habitica extends individual productivity into collaborative gameplay.</p>
+<p>Users can participate in quests where completing tasks contributes to group objectives such as defeating bosses or collecting items.</p>
+<p>This introduces a second motivational mechanism:</p>
+<blockquote>
+   <p><strong>Accountability through shared progress.</strong></p>
+</blockquote>
+<h2>8. Parties and Social Accountability</h2>
+<p>Users can work together in parties.</p>
+<p>Group quests connect individual task completion with a shared objective, meaning a user's actions can contribute to the progress of other members.</p>
+<hr/>
+<h1>5. Technical Approach</h1>
+<h2>System Overview</h2>
+<pre><code class="language-text">                       USER
+                         │
+                         ▼
+              ┌────────────────────┐
+              │  Web / Mobile UI   │
+              └─────────┬──────────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │  Backend API  │
+                └───────┬───────┘
+                        │
+        ┌───────────────┼────────────────┐
+        │               │                │
+        ▼               ▼                ▼
+      Tasks         Game Engine      Social System
+        │               │                │
+        ▼               ▼                ▼
+     Habits        XP / HP / Gold      Parties
+     Dailies       Levels / Items      Quests
+     To-Dos        Rewards            Challenges
+        │               │                │
+        └───────────────┼────────────────┘
+                        ▼
+                    DATABASE
+</code></pre>
+<p>Habitica is a full-stack application. Its official repository identifies technologies including JavaScript, HTML/CSS, Node.js, Express, MongoDB, and Vue/Vue.js.</p>
+<h2>Task Engine</h2>
+<p>At the center of the application is the task system.</p>
+<p>Tasks are categorized into:</p>
+<pre><code class="language-text">Habits
+Dailies
+To-Dos
+Rewards
+</code></pre>
+<p>This task model provides the foundation for the rest of the application.</p>
+<h2>Gamification Engine</h2>
+<p>The gamification layer translates task activity into game consequences.</p>
+<p>Conceptually:</p>
+<pre><code class="language-text">Task Completed
+      │
+      ▼
+Calculate Reward
+      │
+ ┌────┼──────────────┐
+ ▼    ▼              ▼
+ XP   Gold        Progress
+ │
+ ▼
+Level / Character Development
+</code></pre>
+<p>Failure on applicable tasks can also affect player health.</p>
+<p>The result is a feedback mechanism between real-world behavior and the game state.</p>
+<h2>Recurring Task Processing</h2>
+<p>Dailies require the system to understand schedules.</p>
+<p>For example:</p>
+<pre><code class="language-text">Daily:
+"Study"
+
+Schedule:
+Monday
+Wednesday
+Friday
+</code></pre>
+<p>The system needs to determine when the task is due and update the user's task state accordingly.</p>
+<h2>Social and Quest System</h2>
+<p>The social layer connects individual activity to group objectives.</p>
+<pre><code class="language-text">User A ──┐
+         │
+User B ──┼──► Party Quest ──► Shared Objective
+         │
+User C ──┘
+</code></pre>
+<p>Quest progress can be affected by members' task activity, creating an accountability mechanism in addition to individual rewards.</p>
+<h2>API and Integrations</h2>
+<p>Habitica exposes a public API for interacting with tasks, groups, challenges, and other application functionality.</p>
+<p>This makes the system extensible beyond its primary interface.</p>
+<h2>Data Management</h2>
+<p>The system needs to maintain persistent information such as:</p>
+<ul>
+   <li>User accounts</li>
+   <li>Tasks</li>
+   <li>Task schedules</li>
+   <li>Character statistics</li>
+   <li>Rewards</li>
+   <li>Equipment</li>
+   <li>Parties</li>
+   <li>Quests</li>
+   <li>Progress</li>
+</ul>
+<p>The repository identifies MongoDB among its technologies.</p>
+<hr/>
+<h1>6. Technology Stack</h1>
+<table class="e-rte-table">
+   <thead>
+      <tr>
+         <th>Layer</th>
+         <th>Technology</th>
+         <th>Purpose</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Frontend</td>
+         <td>Vue / Vue.js</td>
+         <td>User interface</td>
+      </tr>
+      <tr>
+         <td>Backend</td>
+         <td>Node.js</td>
+         <td>Application runtime</td>
+      </tr>
+      <tr>
+         <td>Web Framework</td>
+         <td>Express</td>
+         <td>Backend/API layer</td>
+      </tr>
+      <tr>
+         <td>Database</td>
+         <td>MongoDB</td>
+         <td>Persistent application data</td>
+      </tr>
+      <tr>
+         <td>Languages</td>
+         <td>JavaScript / HTML / CSS</td>
+         <td>Application development</td>
+      </tr>
+      <tr>
+         <td>API</td>
+         <td>Habitica API</td>
+         <td>Application integrations</td>
+      </tr>
+      <tr>
+         <td>Mobile</td>
+         <td>Android / iOS applications</td>
+         <td>Mobile access</td>
+      </tr>
+   </tbody>
+</table>
+<p>The official Habitica repository lists JavaScript, HTML, CSS, Express, MongoDB, Node.js, Vue, and Vue.js among the project's technologies.</p>
+<p>The important point is that the technologies support the requirements of the problem:</p>
+<pre><code class="language-text">Need to manage tasks
+        ↓
+Task engine
+
+Need to track progression
+        ↓
+Gamification engine
+
+Need persistent user data
+        ↓
+Database
+
+Need multiple clients
+        ↓
+Web / Mobile interfaces
+
+Need external integrations
+        ↓
+API
+</code></pre>
+<p>This follows the HackForge principle:</p>
+<blockquote>
+   <p><strong>Problem → Requirement → Technology → Solution</strong></p>
+</blockquote>
+<hr/>
+<h1>7. Expected Impact</h1>
+<h2>Who Benefits?</h2>
+<h3>Students</h3>
+<p>Students can represent academic goals as recurring tasks and receive immediate feedback for completing them.</p>
+<h3>Individuals Building Habits</h3>
+<p>Users trying to establish exercise, reading, sleep, or other routines can turn repeated behaviors into measurable progression.</p>
+<h3>People Who Prefer Gamified Experiences</h3>
+<p>Users who respond well to game mechanics may find XP, levels, rewards, and quests more engaging than conventional checklists.</p>
+<h3>Groups</h3>
+<p>Parties and quests provide an additional layer of accountability by connecting individual activity with shared objectives.</p>
+<h2>Expected Value</h2>
+<p>The key potential value is not that users suddenly become more organized.</p>
+<p>The value is in changing the feedback loop.</p>
+<h3>Traditional Productivity</h3>
+<pre><code class="language-text">Task
+ ↓
+Complete
+ ↓
+Checkbox disappears
+</code></pre>
+<h3>Gamified Productivity</h3>
+<pre><code class="language-text">Task
+ ↓
+Complete
+ ↓
+Immediate feedback
+ ↓
+XP / Gold / Progress
+ ↓
+Character development
+ ↓
+Reward
+ ↓
+Motivation to continue
+</code></pre>
+<p>This gives everyday actions a visible progression system.</p>
+<h2>Broader Impact</h2>
+<p>The approach demonstrates that productivity software does not necessarily have to behave like a traditional productivity application.</p>
+<p>Game mechanics can be used as an interface for:</p>
+<ul>
+   <li>Goal tracking</li>
+   <li>Habit formation</li>
+   <li>Accountability</li>
+   <li>Progress visualization</li>
+   <li>Reward systems</li>
+</ul>
+<p>The important design question is therefore not simply:</p>
+<blockquote>
+   <p>"How do we track tasks?"</p>
+</blockquote>
+<p>but:</p>
+<blockquote>
+   <p><strong>"How do we design a feedback system that encourages people to keep working toward their goals?"</strong></p>
+</blockquote>
+<hr/>
+<h1>8. Future Scope</h1>
+<h2>Adaptive Gamification</h2>
+<p>The system could learn which reward mechanisms work best for individual users.</p>
+<p>For example:</p>
+<pre><code class="language-text">User prefers:
+    Social accountability
+          ↓
+Recommend more group quests
+
+User prefers:
+    Personal progression
+          ↓
+Emphasize levels and achievements
+</code></pre>
+<p>This would move from generic gamification toward personalized motivation.</p>
+<h2>Intelligent Goal Planning</h2>
+<p>An intelligent planning layer could break large goals into smaller actionable tasks.</p>
+<p>For example:</p>
+<pre><code class="language-text">Goal:
+"Prepare for a programming exam"
+
+        ↓
+
+Break into:
+
+Arrays
+ ↓
+Linked Lists
+ ↓
+Stacks &amp; Queues
+ ↓
+Trees
+ ↓
+Graphs
+ ↓
+Practice Problems
+ ↓
+Revision
+</code></pre>
+<p>The system could then convert those steps into appropriate tasks and schedules.</p>
+<h2>Personalized Difficulty</h2>
+<p>Tasks could adapt based on the user's history.</p>
+<p>If a user repeatedly misses a task, the system could suggest:</p>
+<ul>
+   <li>Smaller task size</li>
+   <li>Different schedule</li>
+   <li>Additional reminders</li>
+   <li>A different reward</li>
+   <li>A rest period</li>
+</ul>
+<p>The goal would be to make the system responsive to the user's behavior rather than simply increasing reminders.</p>
+<h2>Improved Accountability</h2>
+<p>Future versions could support more structured group challenges.</p>
+<p>For example:</p>
+<pre><code class="language-text">Study Group
+     │
+     ▼
+30-Day Challenge
+     │
+ ┌───┼───┐
+ ▼   ▼   ▼
+A    B   C
+│    │   │
+└────┼───┘
+     ▼
+Shared Progress
+</code></pre>
+<p>This could be useful for student groups, fitness communities, and teams.</p>
+<h2>Cross-Platform Expansion</h2>
+<p>The system could continue expanding across:</p>
+<ul>
+   <li>Web</li>
+   <li>Android</li>
+   <li>iOS</li>
+   <li>Desktop</li>
+   <li>Browser extensions</li>
+   <li>Wearables</li>
+</ul>
+<p>The goal would be to make task feedback available wherever the user performs the activity.</p>
+<h2>Smarter Reward Systems</h2>
+<p>Future versions could allow users to define richer reward structures while maintaining safeguards against excessive or unhealthy use of gamification.</p>
+<p>The system could distinguish between:</p>
+<ul>
+   <li>Immediate rewards</li>
+   <li>Long-term rewards</li>
+   <li>Personal milestones</li>
+   <li>Group achievements</li>
+   <li>Streak milestones</li>
+</ul>
+<hr/>
+<h1>Conclusion</h1>
+<p>Habitica demonstrates a different way of approaching productivity.</p>
+<p>Instead of asking:</p>
+<blockquote>
+   <p><strong>"How can we make another better to-do list?"</strong></p>
+</blockquote>
+<p>the underlying idea asks:</p>
+<blockquote>
+   <p><strong>"What if completing real-world tasks produced the same sense of progression that makes games engaging?"</strong></p>
+</blockquote>
+<p>The resulting model is:</p>
+<pre><code class="language-text">             REAL-WORLD GOAL
+                    │
+                    ▼
+                  TASK
+                    │
+                    ▼
+                COMPLETION
+                    │
+                    ▼
+            GAME FEEDBACK
+          ┌─────────┼─────────┐
+          ▼         ▼         ▼
+         XP        Gold     Progress
+          │         │         │
+          └─────────┼─────────┘
+                    ▼
+                 REWARDS
+                    │
+                    ▼
+              CONTINUE GOAL
+</code></pre>
+<p>The project demonstrates how a familiar real-world problem—maintaining consistency with goals—can be approached from an unconventional perspective.</p>
+<p>Rather than beginning with a technology and searching for somewhere to use it, the solution starts with a human problem:</p>
+<blockquote>
+   <p><strong>People know what they want to accomplish, but maintaining consistent action is difficult.</strong></p>
+</blockquote>
+<p>The technology and game mechanics are then used to create a feedback system around that problem.</p>
+<p>That makes Habitica a useful example of the kind of <strong>problem-first thinking</strong> encouraged by the Logic League Ideathon.</p>
+	</main>
+
+	<footer>
+		<p><b>&copy; 2026 Yorokobi-San. All Rights Reserved.</b></p>
+	</footer>
+
+</html>
+
